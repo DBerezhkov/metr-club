@@ -1,0 +1,1424 @@
+@import "nullstyle.css";
+@import "select.css";
+@import "popup.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.index {
+    background-image: url(/img/landing/background/Vector\ 1.svg), url(/img/landing/background/Vector\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 50%;
+    padding: 20px 15px;
+}
+
+.index__container {
+max-width: 816px;
+max-height: 792px;
+margin: 0px auto;
+display: flex;
+flex-direction: column;
+}
+
+.index__content {
+    display: flex;
+    flex-direction:column;
+    flex: 1 1 auto;
+}
+
+.content__brand-names {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    max-height:32px;
+    margin-bottom: 36px;
+}
+.brand__names-metr {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 32px;
+    letter-spacing: 0.025em;
+    color: #DD4040;
+    margin-right: 24px;
+}
+.brand__names-metr span{
+    color: #3979DA;
+}
+
+.brand__names-plus {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 32px;
+    letter-spacing: 0.025em;
+    color: #3979DA;
+}
+.brand__names-ipotekapro{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 32px;
+    letter-spacing: 0.025em;
+    color: #3979DA;
+    margin-left: 24px;
+}
+.brand__names-ipotekapro span{
+    color: #464646;
+}
+
+.content__text {
+    display: flex;
+    flex-direction: column;
+}
+.text__main {
+font-weight: 600;
+font-size: 37px;
+line-height: 40px;
+letter-spacing: 0.025em;
+color: #3979DA;
+margin-top: 36px;
+margin-bottom: 36px;
+}
+.text__body {
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.025em;
+color: #464646;
+    margin-bottom: 36px;
+}
+
+.text__body span {
+    color: #DD4040;
+}
+
+.content__logotypes {
+    display: flex;
+    margin-bottom: 68px;
+}
+.logotypes__metr {
+    margin-right: 88px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 70px;
+
+    max-width: 364px;
+    max-height: 232px;
+
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F9F9F9;
+    box-shadow: 0px 8px 24px #F2F8FF;
+    border-radius: 16px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+.logotypes__ipotekapro img {
+    max-width: 150px;
+}
+
+.content__logotypes__solo {
+    display: flex;
+    justify-content:  center;
+    margin-bottom: 40px;
+}
+
+.logotypes__ipotekapro {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 81px;
+
+max-width: 364px;
+max-height: 232px;
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F9F9F9;
+box-shadow: 0px 8px 24px #F2F8FF;
+border-radius: 16px;
+
+flex: none;
+order: 1;
+flex-grow: 1;
+}
+
+.index__footer {
+    display: flex;
+    max-height: 24px;
+    align-items: center;
+}
+
+.footer_copyright {
+color: #939393;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.025em;
+}
+.footer_copyright span{
+    color: #8AA2C6;
+}
+
+/* Стилизация раздела для регистрации */
+
+.registration {
+    background-image: url(/img/landing/background/Vector\ 4.svg), url(/img/landing/background/Vector\ 3.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+    background-color:  #4586E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 50%;
+    padding: 20px 15px;
+}
+
+.registration__container {
+max-width: 816px;
+max-height: 792px;
+margin: 0px auto;
+display: flex;
+flex-direction: column;
+}
+
+.registration__content {
+    display: flex;
+    flex-direction:column;
+    flex: 1 1 auto;
+}
+
+/* Текстовые элементы перед формой */
+
+.registration__text {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4px;
+}
+.text__title {
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+letter-spacing: 0.025em;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+.text_after-title {
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.025em;
+color: #C0D7FA;
+margin-bottom: 38px;
+}
+.text__description-form {
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.025em;
+color: #8CBDFF;
+}
+
+/* Стилизация формы с полями ввода */
+.content__form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+
+}
+/* Отключение фона при автозаполнении */
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+    -webkit-text-fill-color: rgb(0, 0, 0) !important; /* цвет текста */
+    color: rgb(0, 0, 0) !important; /* цвет текста */
+}
+
+input{
+    width: 100%;
+    background-color: transparent;
+}
+.field input{
+margin-top: 6px;
+margin-bottom: 32px;
+display: flex;
+align-items: center;
+padding: 12px 16px;
+background: #F8FAFC;
+border-radius: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.025em;
+}
+
+.field.error{
+    position: relative;
+}
+
+.field.error__email{
+    position: relative;
+}
+.field.error__email::before {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    margin-left: -7px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(17, 17, 17, 0.9) transparent;
+}
+
+.field.error__email::after {
+    position: absolute;
+    content: "Недопустимый e-mail, пожалуйста выберите другой";
+    text-space: 3px;
+    background: rgba(17, 17, 17, 0.9);
+    border-radius: .5em;
+    line-height: 1.2;
+    bottom: -117%;
+    color: #fff;
+    display: block;
+    left: 1em;
+    padding: 13px;
+    text-shadow: 0 1px 0 #000;
+    z-index: 98;
+
+}
+
+.field.error::before {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    margin-left: -7px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(17, 17, 17, 0.9) transparent;
+}
+
+.field.error::after{
+    position: absolute;
+    content: "Заполните данное поле!";
+    /*background: #111;*/
+
+    background: rgba(17, 17, 17, 0.9);
+    border-radius: .5em;
+    bottom: -77%;
+    color: #fff;
+    display: block;
+    left: 1em;
+    padding: 13px;
+    text-shadow: 0 1px 0 #000;
+    white-space: nowrap;
+    z-index: 98;
+
+}
+.labels__selector{
+    position: relative;
+}
+.error_selector::before{
+    content: "";
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    margin-left: -7px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(17, 17, 17, 0.9) transparent;
+    z-index: 99;
+}
+
+.error_selector::after{
+    position: absolute;
+    content: "Выберите форму сотрудничества!";
+    /*background: #111;*/
+
+    background: rgba(17, 17, 17, 0.9);
+    border-radius: .5em;
+    bottom: -43%;
+    color: #fff;
+    display: block;
+    left: 1em;
+    padding: 13px;
+    text-shadow: 0 1px 0 #000;
+    white-space: nowrap;
+    z-index: 98;
+}
+
+.dropdown__button.error{
+    position: relative;
+}
+
+/* Отключение дефолтных стилей для инпута с типом number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* Стилизация иконки метр клаб для поля "Логин" */
+.field-with_icon{
+    position: relative;
+
+}
+
+.icon{
+position:absolute;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.025em;
+color: #2979E4;
+background: #EAEFFA;
+top: 0;
+right: 0;
+padding: 12px 16px;
+border-radius: 0px 10px 10px 0px;
+}
+
+/* Тень при фокусировании */
+.field input:focus{
+    outline: none;
+    box-shadow: 0px 5px 10px 0px #2a5ca7;
+}
+
+/* Стилизация плейсхолдеров */
+::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #CBCBCB;
+    background-color: #F8FAFC;
+}
+
+/* Стилизация имён полей */
+.labels{
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.025em;
+color: #ECECEC;
+position: relative;
+}
+
+.labels::after{
+    content: url(/img/landing/icons/asterisk.svg); /*Звездочка рядом с label */
+    position: absolute;
+    top: -3px;
+    padding-left: 17px;
+}
+
+.labels.no-required::after{
+    content: " ";
+}
+
+/* Первый столбец формы */
+.content_row1 {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content:space-between;
+
+}
+
+/* Имя */
+.row1__column1 {
+    width: 100%;
+    padding-right: 7px;
+
+}
+
+/* Фамилия */
+.row2__column1 {
+    width: 100%;
+    padding-left: 7px;
+
+}
+
+/* Второй столбец формы */
+.content_row2 {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content:space-between;
+}
+
+/* Логин */
+.row1__column2{
+width: 100%;
+    padding-right: 7px;
+}
+
+/* Телефон */
+.row2__column2 {
+    width: 100%;
+    padding-left: 7px;
+}
+
+
+
+.content_row3 {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content:space-between;
+}
+
+/* Форма взаимодействия */
+.form-group {
+width: 100%;
+    padding-right: 7px;
+
+}
+
+/* Логин в телеграм */
+.row2__column3 {
+    width: 100%;
+    padding-left: 7px;
+}
+
+/*Согласие на обработку*/
+.form__agreement{
+
+}
+.checkbox{
+    flex: 1 1 100%;
+    display: flex;
+    position: relative;
+}
+
+.checkbox__input input{
+    display: none;
+
+}
+
+.checkbox__input::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #ECECEC;
+    position: absolute;
+    left: 1%;
+    top: -10%;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox__input.active::after{
+    content: "";
+    position: absolute;
+    left: 1.7%;
+    top: 10%;
+    transform: translateY(-50%);
+    border-style: solid;
+    pointer-events: none;
+
+    border: solid #2979E4;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.checkbox__label{
+    align-self: center;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    color: #8CBDFF;
+}
+
+.checkbox.error_checkbox::before {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 2.5%;
+    margin-left: -7px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(17, 17, 17, 0.9) transparent;
+}
+
+.checkbox.error_checkbox::after{
+    position: absolute;
+    content: "Чтобы продолжить, нужно дать согласие";
+
+
+    background: rgba(17, 17, 17, 0.9);
+    font-size: 12px;
+    border-radius: .5em;
+    bottom: -240%;
+    color: #fff;
+    display: block;
+    left: 0;
+    padding: 13px;
+    text-shadow: 0 1px 0 #000;
+    white-space: nowrap;
+    z-index: 98;
+
+}
+
+.line-registration{
+    margin-bottom: 19.5px;
+    overflow: hidden;
+}
+
+/* Контейнер кнопки */
+.content__button {
+
+}
+
+/* Стилизация кнопки отправки формы */
+.content__button input{
+display: flex;
+border-radius: 10px;
+margin-bottom: 42.5px;
+width: 100%;
+justify-content: center;
+align-self: center;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.025em;
+padding: 14px;
+color: #2B80FE;
+background-color: #F4F9FF;
+cursor: pointer;
+box-shadow: 0px 8px 64px #2771D2;
+}
+
+/* Изменение цвета при наведении */
+input[type=submit]:hover {
+    background-color: #e2e9f0;
+}
+/* Стилизация футера */
+.registration__footer {
+    display: flex;
+    max-height: 24px;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+/* Стилизация текста футера */
+.footer__subscribe {
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.025em;
+color: #AECAF4;
+}
+
+.footer__icons {
+margin-left: 72.27px;
+
+}
+.facebook {
+    margin-right: 1px;
+}
+.telegram {
+    margin-right: 13px;
+}
+.instagram {
+    margin-right: 13px;
+}
+.vk {
+    margin-right: 13px;
+}
+.classmate {
+}
+
+.mobile-footer
+{
+    display: none;
+}
+
+/* Скрытие popup если инпуты invalid */
+
+.grecaptcha-badge { visibility: hidden; }
+
+
+
+/* PC */
+@media(max-width: 1684px){
+
+    /* Оптимизация левой части */
+
+    .index__container {
+        max-width: 653px;
+    }
+
+    .content__logotypes{
+        margin-bottom: 175px;
+    }
+
+
+     /* Оптимизация правой части */
+    .registration__container {
+        max-width: 653px;
+    }
+    .content__form{
+        padding-bottom: 6px;
+    }
+
+    .checkbox__input::before{
+        left: 1%;
+        top: 15%;
+    }
+
+    .checkbox__input.active::after{
+        left: 1.8%;
+        top: 25%;
+    }
+
+    .checkbox__label{
+        align-self: center;
+        margin-left: 40px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.025em;
+        color: #8CBDFF;
+    }
+
+    .checkbox.error_checkbox::before {
+        bottom: 10%;
+        left: 2.7%;
+    }
+
+    .checkbox.error_checkbox::after{
+        bottom: -95%;
+        left: 0;
+    }
+    .text__main{
+        font-size: 29px;
+    }
+    .text__body {
+
+        font-size: 20px;
+        margin-bottom: 52.36px;
+    }
+
+    .content__logotypes{
+        margin-bottom: 53.36px;
+    }
+
+}
+
+
+@media(max-width: 1366px), (max-height: 850px){
+
+     /* Оптимизация левой части */
+
+    .index__container {
+        max-width: 523px;
+
+    }
+
+    .content__logotypes {
+        margin-bottom: 80px;
+    }
+    .brand__names-metr {
+        font-size: 40px;
+    }
+    .brand__names-ipotekapro{
+        font-size: 40px;
+    }
+    .logotypes__metr {
+        margin-right: 30px;
+        max-width: 246.5px;
+    }
+
+    .logotypes__ipotekapro {
+        max-width: 246.5px;
+    }
+
+    .text__main {
+        font-size: 23px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        line-height: 36px;
+    }
+
+    .text__body {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 40.36px;
+    }
+
+
+  /* Оптимизация правой части */
+    .registration__container {
+        max-width: 523px;
+    }
+
+    .labels{
+        font-size: 12px;
+        }
+
+    .text__title {
+        font-size: 30px;
+    }
+
+    .text_after-title {
+        margin-bottom: 15px;
+    }
+
+    .content__form {
+        margin-bottom: 10px;
+        padding-bottom: 0px;
+    }
+
+    .field input{
+        margin-bottom: 13px;
+    }
+    .line-registration{
+        margin-bottom: 18px;
+
+    }
+    .checkbox__label{
+        align-self: center;
+        margin-left: 15px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0.025em;
+        color: #8CBDFF;
+    }
+
+    .content__button input{
+        margin-bottom: 36px;
+        height: 52px;
+    }
+
+    .checkbox__input::before{
+        left: 1%;
+        top: 15%;
+    }
+
+    .checkbox__input.active::after{
+        left: 2.1%;
+        top: 25%;
+    }
+
+    .checkbox__label{
+        margin-left: 45px;
+    }
+    .field.error__email::after {
+        bottom: -118%;
+        left: 0;
+    }
+
+}
+
+/* Tablet */
+@media(max-width: 1195px){
+
+         /* Оптимизация левой части */
+         .index__container {
+            max-width: 480px;
+
+        }
+
+    .content__brand-names {
+        margin-bottom: 20px;
+    }
+
+        .brand__names-metr {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 32px;
+        }
+
+        .brand__names-plus {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 32px;
+        }
+
+        .brand__names-ipotekapro{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 32px;
+        }
+
+
+    .text__main {
+        font-size: 21px;
+        margin-bottom: 26px;
+    }
+
+    .text__body {
+        font-size: 16px;
+        margin-bottom: 26px;
+    }
+
+    .content__logotypes {
+        margin-bottom: 65.42px;
+    }
+
+        .logotypes__metr {
+            margin-right: 30px;
+            max-width: 225px;
+        }
+
+        .logotypes__ipotekapro {
+            max-width: 225px;
+        }
+
+        .footer_copyright {
+            font-size: 12px;
+        }
+
+
+
+           /* Оптимизация правой части */
+    .field.error::before {
+        content: "";
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        margin-left: -7px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent rgba(17, 17, 17, 0.9) transparent;
+    }
+
+    .field.error::after{
+        position: absolute;
+        content: "Заполните данное поле!";
+        /*background: #111;*/
+
+        background: rgba(17, 17, 17, 0.9);
+        border-radius: .5em;
+        bottom: -95%;
+        color: #fff;
+        display: block;
+        left: 0;
+        padding: 13px;
+        text-shadow: 0 1px 0 #000;
+        white-space: nowrap;
+        z-index: 98;
+
+    }
+
+    .field.error__email::before{
+        content: "";
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        margin-left: -7px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent rgba(17, 17, 17, 0.9) transparent;
+    }
+    .field.error__email::after{
+        bottom: -190%;
+
+    }
+
+    .error_selector::after{
+        position: absolute;
+        content: "Выберите форму сотрудничества!";
+        /*background: #111;*/
+
+        background: rgba(17, 17, 17, 0.9);
+        border-radius: .5em;
+        bottom: -50%;
+        color: #fff;
+        display: block;
+        left: 0;
+        padding: 13px;
+        text-shadow: 0 1px 0 #000;
+        white-space: nowrap;
+        z-index: 98;
+    }
+
+    .registration__container {
+        max-width: 480px;
+    }
+
+    .text__title {
+        font-size: 24px;
+    }
+
+    .text_after-title {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .content__form {
+        margin-bottom: 14px;
+        padding-bottom: 0px;
+
+    }
+    .labels{
+        font-size: 11px;
+        }
+
+        ::placeholder {
+            font-size: 11px;
+            line-height: 18px;
+        }
+
+        .field input{
+            padding: 12px 10px;
+            margin-bottom: 13px;
+            font-size: 11px;
+            line-height: 15px;
+        }
+
+        .icon{
+            font-weight: 600;
+            font-size: 11px;
+            padding: 7.5px 9px;
+            }
+
+            .content__button input{
+                font-size: 18px;
+                padding: 11px;
+            }
+    .line-registration{
+        margin-bottom: 19px;
+    }
+
+    .content__button input{
+        margin-bottom: 36px;
+    }
+
+    .footer__subscribe {
+        font-size: 11px;
+    }
+
+    .footer__icons {
+        margin-left: 50px;
+
+        }
+        .facebook {
+            margin-right: 15px;
+        }
+        .telegram {
+            margin-right: 15px;
+        }
+        .instagram {
+            margin-right: 15px;
+        }
+        .vk {
+            margin-right: 15px;
+        }
+
+    .checkbox__input.active::after{
+        left: 2.2%;
+        top: 25%;
+    }
+
+}
+
+/* Mobile */
+@media(max-width: 1012px){
+    .wrapper {
+        flex-direction: column;
+    }
+
+    /* Оптимизация левой части */
+
+    .index__container {
+        max-width: 328px;
+
+    }
+
+    .content__brand-names {
+        max-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .brand__names-metr {
+        font-size: 30px;
+    }
+
+    .brand__names-plus {
+        font-size: 30px;
+    }
+
+    .brand__names-ipotekapro{
+        font-size: 30px;
+    }
+
+    .content__text img{
+        height: 1px;
+    }
+
+    .text__main {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 17px;
+        line-height: 24px;
+        max-height: 72px;
+    }
+
+    .text__body {
+        font-size: 15px;
+        max-height: 120px;
+        line-height: 18px;
+    }
+
+    .content__logotypes__solo {
+        flex-direction: column;
+    }
+
+    .content__logotypes {
+        margin-bottom: 24px;
+        flex-direction: column;
+    }
+
+    .logotypes__metr {
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F9F9F9;
+box-shadow: 0px 8px 24px #F2F8FF;
+        max-width: 328px;
+        max-height: 136px;
+        margin-right: 0px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .logotypes__metr img {
+        max-width: 96px;
+        max-height: 88px;
+    }
+
+    .logotypes__ipotekapro {
+        max-width: 328px;
+        max-height: 136px;
+        padding: 20px 71px;
+    }
+
+    .logotypes__ipotekapro img {
+        max-width: 78px;
+        max-height: 94px;
+    }
+
+    .footer_copyright {
+        display: none;
+    }
+
+      /* Оптимизация правой части */
+
+    .field.error{
+        outline: none;
+    }
+
+    .field.error__email{
+        outline: none;
+    }
+
+    .dropdown__button.error{
+        outline: none;
+    }
+
+    .checkbox__input.error_checkbox::after{
+        position: absolute;
+        content: "Чтобы продолжить, нужно дать согласие";
+        /*background: #111;*/
+
+        background: rgba(17, 17, 17, 0.9);
+        font-size: 12px;
+        border-radius: .5em;
+        bottom: -270%;
+        color: #fff;
+        display: block;
+        left: -90%;
+        padding: 13px;
+        text-shadow: 0 1px 0 #000;
+        white-space: nowrap;
+        z-index: 98;
+
+    }
+
+
+
+    .field.error::after{
+        position: absolute;
+        content: "Заполните данное поле!";
+        /*background: #111;*/
+
+        background: rgba(17, 17, 17, 0.9);
+        border-radius: .5em;
+        bottom: -75%;
+        color: #fff;
+        display: block;
+        left: 0;
+        padding: 13px;
+        text-shadow: 0 1px 0 #000;
+        white-space: nowrap;
+        z-index: 98;
+
+    }
+
+    .field.error__email::after{
+        bottom: -117%;
+
+    }
+
+    .error_selector::after{
+        position: absolute;
+        content: "Выберите форму сотрудничества!";
+        /*background: #111;*/
+
+        background: rgba(17, 17, 17, 0.9);
+        border-radius: .5em;
+        bottom: -43%;
+        color: #fff;
+        display: block;
+        left: 0;
+        padding: 13px;
+        text-shadow: 0 1px 0 #000;
+        white-space: nowrap;
+        z-index: 98;
+    }
+
+      .registration{
+        flex: 1 1 1370px;
+        justify-content: flex-start;
+      }
+
+      .registration__container {
+        max-width: 296px;
+        max-height: 1315px;
+    }
+
+.registration__text {
+    padding-bottom: 0px;
+    margin-bottom: 24px;
+
+}
+    .text__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .text_after-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+
+    .content__form {
+        margin-bottom: 18px;
+        padding-bottom: 0px;
+        flex-direction: column;
+
+    }
+    .content_row1{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .content_row2{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .content_row3{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    /* Имя */
+    .row1__column1 {
+        padding-right: 0px;
+
+    }
+
+    /* Фамилия */
+    .row2__column1 {
+        padding-left: 0px;
+
+    }
+    /* Логин */
+    .row1__column2{
+        padding-right: 0px;
+    }
+
+    /* Телефон */
+    .row2__column2 {
+        padding-left: 0px;
+    }
+
+    /* Форма взаимодействия */
+    .form-group {
+        padding-right: 0px;
+
+    }
+
+    /* Логин в телеграм */
+    .row2__column3 {
+        padding-left: 0px;
+    }
+
+    .labels{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        }
+
+        ::placeholder {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .field input{
+            padding: 12px 16px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 14px;
+        }
+
+        .icon{
+            font-weight: 600;
+            font-size: 14px;
+            padding: 12px 16px;
+            }
+
+            .content__button input{
+                font-size: 18px;
+                padding: 11px;
+            }
+    .line-registration{
+        max-height: 1px;
+        margin-bottom: 32px;
+    }
+
+    .content__button input{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 32px;
+        padding: 16px;
+        height: 52px;
+    }
+
+    .registration__footer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .footer__subscribe {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .footer__icons {
+        margin-left: 0px;
+        align-self: flex-start;
+        position: relative;
+        margin-bottom: 72px;
+
+        }
+        .facebook {
+            margin-right: 15px;
+        }
+        .telegram {
+            margin-right: 15px;
+        }
+        .instagram {
+            margin-right: 15px;
+        }
+        .vk {
+            margin-right: 15px;
+        }
+
+        .footer__subscribe::after{
+            content: url(/img/landing/line-registration.svg);
+            position: absolute;
+            top: 96px;
+            right: 0;
+            width: 296px;
+            overflow: hidden;
+        }
+
+    .mobile-footer
+{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #ECECEC;
+}
+
+.mobile-footer span {
+    color: #AECAF4;
+}
+
+    .checkbox__input.active::after{
+        left: 2.8%;
+        top: 22%;
+    }
+    .checkbox.error_checkbox::before {
+        bottom: 40%;
+        left: 4.5%;
+        z-index: 98;
+    }
+
+    .checkbox.error_checkbox::after{
+        bottom: -30%;
+        left: 0;
+    }
+
+}
+
+@media(max-width: 325px){
+    .index__container {
+        max-width: 263px;
+    }
+
+    .text__body {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 56px;
+    }
+
+    .popup__close {
+        font-size: 13px;
+    }
+
+
+}
+
+

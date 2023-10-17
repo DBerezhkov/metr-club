@@ -1,0 +1,139 @@
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 900px;
+    padding: 50px;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 50, 92, 0.8);
+    backdrop-filter: blur(8px);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: none;
+    z-index: 100;
+    /*transition: all 0.3s ease 0s;*/
+}
+
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*.popup.open .popup__content{*/
+/*    transform: perspective(600px) translate(0px, 0%) rotate(0deg);*/
+/*    opacity: 1;*/
+/*}*/
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup__content {
+    max-width: 744px;
+    max-height: 454px;
+    width: 744px;
+    height: 454px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px #404865;
+    border-radius: 16px;
+    padding: 62px 16px 40px 16px;
+}
+.popup__icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.popup__title {
+font-weight: 600;
+font-size: 22px;
+line-height: 24px;
+color: #3979DA;
+text-align: center;
+margin-bottom: 24px;
+}
+.popup__text {
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.025em;
+color: #889DBC;
+margin-bottom: 40px;
+
+}
+
+.popup__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 56.535px;
+    background: #F4F9FF;
+    box-shadow: 0px 8px 64px #CEE0F9;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    color: #2B80FE;
+    margin-left: 256.01px;
+    margin-right: 256.01px;
+    white-space: nowrap;
+
+}
+
+/* Изменение цвета при наведении */
+.popup__close:hover {
+    background-color: #eef3f7;
+}
+
+@media(max-width: 1012px){
+    .popup__icon img {
+        height: 112px;
+        width: 112px;
+    }
+
+.popup__body {
+
+}
+.popup__content {
+    max-width: 312px;
+    max-height: 476px;
+    width: 312px;
+    height: 476px;
+    padding: 48px 16px 40px 16px;
+}
+.popup__icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.popup__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+}
+.popup__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.popup__close {
+    padding: 16px 56.535px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+}

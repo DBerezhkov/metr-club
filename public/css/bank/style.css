@@ -1,0 +1,247 @@
+.file-preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0;
+    max-height: 75px;
+}
+
+.file-preview:hover {
+    z-index: 1000;
+}
+
+.file-preview:hover .file-details {
+    opacity: 1;
+}
+
+.file-preview.file-file-preview .file-image {
+    border-radius: 20px;
+    background: #999;
+}
+
+.file-preview.file-file-preview .file-details {
+    opacity: 1;
+}
+
+.file-preview.file-image-preview .file-details {
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.file-preview .file-remove {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border: none;
+}
+
+.file-preview:hover .file-details {
+    opacity: 1;
+}
+
+.file-preview .file-details {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-size: 16px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2em 1em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 150%;
+    max-height: 75px;
+}
+
+.file-preview:hover .file-image img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    /*-webkit-filter: blur(8px);*/
+    /*filter: blur(8px);*/
+}
+
+.file-preview .file-image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.file-preview .file-image img {
+    display: block;
+}
+
+.file-preview.file-success .file-success-mark {
+    -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.file-preview.file-error .file-error-mark {
+    opacity: 1;
+    -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.file-preview .file-success-mark, .file-preview .file-error-mark {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 500;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -27px;
+}
+
+.file-preview .file-success-mark svg, .file-preview .file-error-mark svg {
+    display: block;
+    width: 54px;
+    height: 54px;
+}
+
+.file-preview.file-processing .file-progress {
+    opacity: 1;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.file-preview.file-complete .file-progress {
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in;
+}
+
+.file-preview:not(.file-processing) .file-progress {
+    -webkit-animation: pulse 6s ease infinite;
+    -moz-animation: pulse 6s ease infinite;
+    -ms-animation: pulse 6s ease infinite;
+    -o-animation: pulse 6s ease infinite;
+    animation: pulse 6s ease infinite;
+}
+
+.file-preview .file-progress {
+    opacity: 1;
+    z-index: 1000;
+    pointer-events: none;
+    position: absolute;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
+    width: 80px;
+    margin-left: -40px;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-transform: scale(1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.file-preview .file-progress .file-upload {
+    background: #333;
+    background: linear-gradient(to bottom, #666, #444);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    -webkit-transition: width 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out;
+    -ms-transition: width 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}
+
+.file-preview.file-error .file-error-message {
+    display: block;
+}
+
+.file-preview.file-error:hover .file-error-message {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.file-preview .file-details {
+    background-color: rgba(119, 127, 134, 0);
+    opacity: 1;
+    color: black;
+}
+
+
+.file-preview .file-image {
+    border-radius: 20px;
+}
+
+.file-preview.file-file-preview .file-details {
+    border-radius: 20px;
+
+}
+
+.file-preview.file-image-preview .file-details {
+    border-radius: 20px;
+    min-height: 52px;
+}
+
+.file-preview.file-image-preview {
+    border-radius: 20px;
+}
+
+.file-preview {
+    max-width: 52px;
+    max-height: 52px;
+}
+
+
+.file-preview .file-image img:not([src]) {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+
+.file-filename {
+    position: relative;
+    top: -34px;
+    left: 41px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 300px;
+}
+
+.file-filename__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: none;
+}

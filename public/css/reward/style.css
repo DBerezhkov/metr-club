@@ -1,0 +1,1577 @@
+@import "nullstyle.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E9F5;
+}
+
+ol{
+    margin-left: 16px;
+}
+
+ul{
+    margin-left: 16px;
+}
+
+
+.wrapper {
+    padding: 0px 100px 68px 100px;
+    background-color: #E5E9F5;
+    min-height: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-wrapper {
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+    /* Цвет фона */
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+    /* цвет текста */
+    color: rgb(0, 0, 0) !important;
+    /* цвет текста */
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+.card {
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    /* overflow: hidden; */
+    height: max-content;
+    flex: 1 1 auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    /* height: 85vh;
+    overflow: scroll; */
+
+}
+
+.search__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.close-btn {
+    width: 20px;
+    height: 20px;
+}
+
+.bank__cr img {
+    width: 20px;
+    height: 20px;
+}
+
+.close-modal {
+    width: 30px;
+    height: 30px;
+}
+
+.copy-contact {
+    width: 15px;
+    height: 15px;
+}
+
+.file img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+
+}
+
+.header::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #E5E9F5;
+    display: flex;
+    position: absolute;
+    top: -11%;
+    z-index: -2;
+    left: -1%;
+}
+
+.header::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #E5E9F5;
+    display: inline-block;
+    position: absolute;
+    right: -1%;
+    top: -11%;
+    z-index: -2;
+
+}
+
+.card__header::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 30px;
+    z-index: -1;
+}
+
+.card__header::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 30px;
+    z-index: -1;
+}
+
+
+.card__header {
+    margin: 0px;
+    padding-left: 30px;
+    background-color: #FFFFFF;
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.card-header__logo {
+    margin-top: 22px;
+}
+
+.card-header__search input {
+    background: #E5E9F5;
+    border-radius: 30px;
+    margin-right: 50px;
+    margin-top: 19px;
+    font-size: 16px;
+    padding: 10.25px 40px 10.25px 50px;
+    width: 100%;
+}
+
+.card-header__search {
+    position: relative;
+    flex-basis: 36.5%;
+    margin-right: 50px;
+}
+
+.search-icon-container{
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+}
+
+.close-btn {
+    display: none;
+}
+
+.card__body {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+
+.card-body__titles {
+    display: flex;
+    background-color: #E5E9F5;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #6E6893;
+    min-height: 45px;
+    align-items: center;
+    border-top: 1px solid #D9D5EC;
+    /* border-bottom: 1px solid #D9D5EC; */
+
+    padding-left: 20px;
+    padding-right: 45px;
+}
+
+.titles__number {
+    flex: 0 1 2%;
+}
+
+.titles__bank {
+    flex: 0 1 12.3%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.titles__cr {
+    flex: 0 1 41.5%;
+    width: min-content;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+
+}
+
+.titles__programs {
+    flex: 0 1 25.7%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.titles__details {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body__bank {
+    display: flex;
+    padding: 7px 45px 7px 20px;
+    min-height: 60px;
+    border-top: 1px solid #D9D5EC;
+
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card-body__bank:hover {
+    background-color: #EDF0F8;
+
+}
+
+.card-body__bank:hover:nth-last-child(1){
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.bank__number {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    flex: 0 1 2%;
+    margin-right: 10px;
+}
+
+.bank__logo {
+    flex: 0 1 12.3%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bank__logo img {
+    width: 132px;
+    height: 78px;
+}
+
+
+.bank__cr {
+    flex: 0 1 41.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.programs__text{
+    margin-bottom: 8px;
+}
+
+.max-rate-reward{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.reward-percent{
+    font-weight: 500;
+}
+.reward-text{
+    display: none;
+}
+
+.bank__programs {
+    flex: 0 1 25.7%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.programs__content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #25213B;
+}
+
+.bank__show-details-button {
+
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.base-rate {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+}
+
+.btn-details {
+    background: #006FFF;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 8px 30px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-details:hover {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.percent-logo {}
+
+.base-rate__text {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.cr__check-mark {
+    display: none;
+}
+
+
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-card {
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    overflow: hidden;
+    position: fixed;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 862px;
+    height: 794px;
+    width: 71.5%;
+    padding: 24px 34px;
+}
+
+.modal-card__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.modal-card__header img {
+    width: 141px;
+    height: 83px;
+}
+
+.header__logo {
+    width: 141px;
+    height: 83px;
+}
+
+.close-modal {
+    margin-top: 14px;
+    align-self: flex-start;
+
+}
+
+.close_mobile_modal {
+    display: none;
+}
+
+.modal-card__nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D5EC;
+    display: flex;
+
+}
+
+.nav__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-right: 18px;
+    position: relative;
+    background-color: #fff;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.nav__link::before {
+    content: '';
+    position: absolute;
+    top: 213%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #1C52DC;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.underline::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+
+/*.tabs {*/
+/*    display: none;*/
+/*}*/
+
+.tabs:target {
+    display: block;
+}
+
+.modal-card__body {
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.body__reward{
+    word-wrap: break-word;
+    line-height: 1.3;
+}
+
+.reward__standart-terms {
+    padding: 33px 11px 0px 11px;
+    border-bottom: 1px solid #D9D5EC;
+    /*width: 98%;*/
+}
+
+.standart-terms__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.standart-terms__content {
+    margin-bottom: 15px;
+}
+
+.reward_additional-terms {
+    padding: 33px 11px 10px 11px
+}
+
+.additional-terms__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+
+    color: #000000;
+    margin-bottom: 29px;
+}
+
+.additional-terms__content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.body__contacts {
+    padding: 22px 0px;
+}
+
+
+
+.contact__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts__card {
+    width: 255px;
+    height: 132px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #EDF0F8;
+    border-radius: 20px;
+    margin-right: 32px;
+
+    color: #000000;
+    padding: 20px;
+    margin-bottom: 16px;
+    position: relative;
+    display: flex;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: auto;
+    justify-content: center;
+}
+
+.contacts__city {
+    font-weight: 600;
+    margin-bottom: 2px;
+    max-width: 200px;
+}
+
+.contacts__name {
+    margin-bottom: 2px;
+}
+
+.contacts__phone {
+    margin-bottom: 2px;
+}
+
+.contacts__email {
+    overflow-wrap: break-word;
+    max-width: 90%;
+}
+
+.copy-contact {
+    position: absolute;
+    top: 14%;
+    right: 10%;
+}
+
+.body__files {
+    padding: 22px 0px;
+}
+
+.files__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    background-color: #EDF0F8;
+    border-radius: 20px;
+    width: 270px;
+    height: 56px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #1C1B1F;
+    padding: 8px 16px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.file__name {
+    white-space: nowrap;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ .contact-has-color{
+    background-color: #bed1f1;
+}
+
+.overlay.modal-wrapper-hide{
+     display: none;
+ }
+
+
+
+@media(max-width: 1366px),
+(max-height: 850px) {
+    .modal-card {
+        height: 700px;
+    }
+
+    .contacts__card{
+        margin-right: 25px;
+    }
+    .file{
+        width: 260px;
+    }
+
+}
+
+@media(max-width: 1366px){
+    .titles__programs {
+        flex: 0 1 25.7%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-body__titles {
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 1320px){
+
+    .bank__logo img{
+        width: 114px;
+        height: 69px;
+    }
+}
+
+/* Tablet */
+
+
+@media(max-width: 1195px) {
+    .wrapper {
+        padding: 0px 50px 68px 50px;
+    }
+
+    .card-wrapper{
+        padding-top: 35px;
+    }
+
+    .modal-card {
+        height: 590px;
+        width: 83.5%;
+    }
+    .bank__logo img{
+        width: 96px;
+        height: 56px;
+    }
+}
+
+@media(max-width: 1025px) {
+
+    .card-header__search input{
+        height: 40px;
+        font-size: 14px;
+        padding-right: 32px;
+    }
+
+    .card-body__titles {
+        font-size: 10px;
+    }
+    .titles__cr {
+        flex: 0 1 35.5%;
+    }
+    .bank__cr{
+        flex: 0 1 35.5%;
+    }
+
+    .contacts__card{
+        margin-right: 15px;
+        width: 247px;
+    }
+
+    .file{
+        width: 246px;
+    }
+
+    .titles__programs {
+        flex: 0 1 25.7%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 970px) {
+    .card-header__search input{
+        font-size: 14px;
+        padding-left: 43px;
+    }
+
+    .card-body__titles{
+        text-align: center;
+    }
+
+    .titles__cr {
+        white-space: normal;
+    }
+
+
+
+
+}
+
+@media(max-width: 884px) {
+
+    .wrapper{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .card-wrapper{
+        padding-top: 32px;
+    }
+
+    .titles__cr {
+        flex: 0 1 28.5%;
+    }
+    .bank__cr{
+        flex: 0 1 28.5%;
+    }
+
+    .contacts__card{
+        margin-right: 9px;
+        width: 300px;
+    }
+    .file{
+        width: 296px;
+    }
+
+    .card-header__search {
+        flex-basis: 43.5%;
+    }
+
+    .titles__bank {
+        flex: 0 1 96px;
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+}
+
+@media(max-width: 821px) {
+    .contacts__card {
+        width: 289px;
+    }
+
+    .file {
+        width: 284px;
+    }
+}
+
+@media(max-width: 780px) {
+
+    .contacts__card {
+        width: 230px;
+    }
+
+    .file {
+        width: 225px;
+    }
+
+    .files__cards a{
+        width: 100%;
+    }
+
+    .max-rate-reward{
+        display: unset;
+    }
+}
+
+@media(max-height: 700px) {
+.modal-card{
+    top: 50px;
+}
+
+}
+
+@media(max-height: 429px) {
+.modal-card{
+    top: 8px;
+    padding-top: 0;
+    width: 95.5%;
+    height: 359px;
+}
+}
+
+@media(max-height: 390px) {
+    .modal-card {
+        top: 8px;
+        padding-top: 0px;
+        width: 95.5%;
+        height: 359px;
+    }
+    }
+
+    @media(max-height: 361px) {
+        .modal-card {
+            top: 8px;
+            padding-top: 0;
+            width: 95.5%;
+            height: 312px;
+        }
+        }
+
+
+
+
+
+/* Mobile */
+@media(max-width: 780px) {
+
+    .wrapper {
+        padding: 0px 15px 15px 15px;
+        background-color: #E5E9F5;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .card-wrapper {
+        padding-top: 85px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        position: fixed;
+        top: -0.3%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+
+    .card__header {
+        border-radius: 0px;
+        padding-left: 27px;
+        align-items: center;
+    }
+
+    .card-header__logo {
+        margin: 0;
+    }
+
+    .card-header__search {
+        margin: 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        max-width: 30px;
+        min-width: 0;
+        height: 34px;
+        transition: min-width 0.5s;
+    }
+
+    .card-header__search.active-search {
+        min-width: 254px;
+    }
+
+    .card-header__search input {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        background-color: #ffffff;
+    }
+
+    .card-header__search input.active-input {
+        background-color: #E5E9F5;
+    }
+
+
+    .search-icon-container{
+        position: absolute;
+        top: -18%;
+        left: 5%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+        display: none;
+    }
+
+    .close-btn.active-close-btn {
+        display: block;
+    }
+
+    .card-body__titles {
+        display: none;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .card__body {
+        background-color: #E5E9F5;
+    }
+
+    .card-body__bank {
+        position: relative;
+        border-style: none;
+        background-color: #FFFFFF;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .bank__logo{
+
+    flex: 0 1 50%;
+    justify-content: flex-start;
+
+    }
+
+    .bank__programs{
+        position: absolute;
+        right: 21px;
+        top: 33px;
+    }
+
+    .programs__text {
+        display: none;
+    }
+
+    .bank__logo{
+        flex: 0 1 100%;
+    }
+    .cr__logo {
+        display: none;
+    }
+    .bank__cr{
+        flex-basis: unset;
+    }
+
+    .reward-text{
+        display: block;
+    }
+
+    .base-rate {
+        white-space: nowrap;
+        top: 34px;
+        right: 23px;
+    }
+
+    .card-body__bank:hover {
+        background-color: #FFFFFF;
+    }
+
+    .btn-details {
+        background: #FFFFFF;
+        border-radius: 6px;
+        border: 1px solid;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+
+        color: rgba(28, 82, 220, 0.5);
+        padding: 6px 16px;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .btn-details:hover {
+        background: #f3f4fc;
+        box-shadow: none;
+    }
+
+
+    .bank__number {
+        display: none;
+    }
+
+
+    .reward-percent {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+
+        color: #000000;
+    }
+    .reward-text {
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+
+        color: #949393;
+    }
+
+    .bank__logo {
+        margin-bottom: 12px;
+    }
+
+    .bank__programs {
+        margin-bottom: 12px;
+    }
+
+
+    .modal-card {
+        width: 100%;
+        height: 100%;
+        padding: 28px 17px;
+        top: 5%;
+        transform: none;
+        transform: translateY(150vh);
+        transition: transform 0.3s;
+
+    }
+
+    .visible{
+        transform: translateY(0);
+        transition: transform 0.3s;
+    }
+
+    /*.bank__logo img {*/
+    /*    width: 85px;*/
+    /*    height: 45px;*/
+    /*}*/
+
+    .overlay {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #edf0f8b6;
+        z-index: 30;
+    }
+
+    .modal-card {
+        margin-top: 50px;
+        padding-top: 0px;
+        padding-bottom: 80px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 18px;
+    }
+
+    .close-modal {
+        display: none;
+    }
+
+    .close_mobile_modal {
+        display: block;
+        width: 100%;
+        min-height: 30px;
+        position: relative;
+    }
+
+    .close-mobile-modal-btn {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+    }
+
+    .close-mobile-modal-icon {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        left: 45%;
+        width: 32px;
+        height: 4px;
+    }
+
+
+    .reward__standart-terms {
+        padding: 20px 0px 0px 0px;
+        border-bottom: 1px solid #D9D5EC;
+    }
+
+    .standart-terms__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #000000;
+        margin-bottom: 13px;
+    }
+
+    .standart-terms__content {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .reward_additional-terms {
+        padding: 20px 0px 40px 0px
+    }
+
+    .additional-terms__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #000000;
+        margin-bottom: 13px;
+    }
+
+    .additional-terms__content {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+
+    .contact__cards {
+        display: flex;
+        justify-content: center;
+        /*width: 95%;*/
+    }
+
+    .contacts__card {
+        margin-right: 0;
+        width: 100%;
+        height: 95px;
+        padding: 20px;
+    }
+
+    .contacts__city {
+        margin-bottom: 3px;
+        right: 6%;
+    }
+
+    .contacts__name {
+        margin-bottom: 3px;
+    }
+
+    .contacts__phone {
+        margin-bottom: 3px;
+    }
+
+    .copy-contact {
+        position: absolute;
+        top: 65%;
+        right: 6%;
+    }
+
+    .body__files {
+        padding: 17px 0px;
+    }
+
+    .files__cards {
+        justify-content: center;
+        /*width: 95%;*/
+    }
+
+    .file {
+        margin-right: 0px;
+        width: 100%;
+    }
+    /*.reward__standart-terms{*/
+    /*    width: 95%;*/
+    /*}*/
+    /*.reward_additional-terms{*/
+    /*    width: 95%;*/
+    /*}*/
+
+
+}
+
+@media(max-width: 500px) {
+
+    .wrapper {
+        padding: 0px 15px 15px 15px;
+        background-color: #E5E9F5;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .card-wrapper {
+        padding-top: 85px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        position: fixed;
+        top: -0.3%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .card__header {
+        border-radius: 0px;
+        padding-left: 27px;
+        align-items: center;
+    }
+
+    .card-header__logo {
+        margin: 0;
+    }
+
+    .card-header__search {
+        margin: 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        max-width: 30px;
+        min-width: 0;
+        height: 34px;
+        transition: min-width 0.5s;
+    }
+
+    .card-header__search.active-search {
+        min-width: 254px;
+    }
+
+    .card-header__search input {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        background-color: #ffffff;
+    }
+
+    .card-header__search input.active-input {
+        background-color: #E5E9F5;
+    }
+
+
+    .search-icon-container{
+        position: absolute;
+        top: -18%;
+        left: 5%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+        display: none;
+    }
+
+    .close-btn.active-close-btn {
+        display: block;
+    }
+
+    .card-body__titles {
+        display: none;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .card__body {
+        background-color: #E5E9F5;
+    }
+
+    .card-body__bank {
+        border-style: none;
+        background-color: #FFFFFF;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+
+    .bank__programs{
+        justify-content: flex-end;
+    }
+
+    .programs__text {
+        display: none;
+    }
+
+
+    .base-rate {
+        white-space: nowrap;
+    }
+
+    .card-body__bank:hover {
+        background-color: #FFFFFF;
+    }
+
+    .btn-details {
+        background: #FFFFFF;
+        border-radius: 6px;
+        border: 1px solid;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+
+        color: rgba(28, 82, 220, 0.5);
+        padding: 6px 16px;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .btn-details:hover {
+        background: #f3f4fc;
+        box-shadow: none;
+    }
+
+
+    .bank__number {
+        display: none;
+    }
+
+
+    .reward-percent {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+
+        color: #000000;
+    }
+
+    .reward-text {
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+
+        color: #949393;
+    }
+
+    .bank__logo {
+        margin-bottom: 12px;
+    }
+
+    .bank__programs {
+        margin-bottom: 12px;
+    }
+
+
+    .modal-card {
+        width: 100%;
+        height: 100%;
+        padding: 28px 17px;
+        top: 5%;
+        transform: none;
+        transform: translateY(150vh);
+        transition: transform 0.3s;
+
+    }
+
+    .visible{
+        transform: translateY(0);
+        transition: transform 0.3s;
+    }
+
+    /*.bank__logo img {*/
+    /*    width: 85px;*/
+    /*    height: 45px;*/
+    /*}*/
+
+    .overlay {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #edf0f8b6;
+    }
+
+    .modal-card {
+        margin-top: 50px;
+        padding-top: 0px;
+        padding-bottom: 80px;
+    }
+
+    .close-modal {
+        display: none;
+    }
+
+    .close_mobile_modal {
+        display: block;
+        width: 100%;
+        min-height: 30px;
+        position: relative;
+    }
+
+    .close-mobile-modal-btn {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+    }
+
+    .close-mobile-modal-icon {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        left: 45%;
+        width: 32px;
+        height: 4px;
+    }
+
+
+    .reward__standart-terms {
+        padding: 20px 0px 0px 0px;
+        border-bottom: 1px solid #D9D5EC;
+    }
+
+    .standart-terms__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #000000;
+        margin-bottom: 13px;
+    }
+
+    .standart-terms__content {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .reward_additional-terms {
+        padding: 20px 0px 40px 0px
+    }
+
+    .additional-terms__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #000000;
+        margin-bottom: 13px;
+    }
+
+    .additional-terms__content {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+
+    .contact__cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts__card {
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contacts__city {
+        margin-bottom: 3px;
+        right: 6%;
+    }
+
+    .contacts__name {
+        margin-bottom: 3px;
+    }
+
+    .contacts__phone {
+        margin-bottom: 3px;
+    }
+
+    .copy-contact {
+        position: absolute;
+        top: 65%;
+        right: 6%;
+    }
+
+    .body__files {
+        padding: 17px 0px;
+    }
+
+    .files__cards {
+        justify-content: center;
+    }
+
+    .file {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width: 348px) {
+
+    .nav__link{
+        font-size: 12px;
+    }
+}
+

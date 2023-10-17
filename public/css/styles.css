@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-image: url('/img/background.jpg');
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+.main__left,
+.main__right {
+  min-height: 100vh;
+  width: 49%;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.logos img {
+  margin-bottom: 100px;
+}
+
+.logos img:last-child {
+  margin-bottom: 0;
+}
+
+.main__right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  margin-top: 45px;
+  padding: 18px 25px;
+  background-color: rgba(0, 110, 255, 0.75);
+  border-radius: 5px;
+  width: 450px;
+  height: auto;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.form__item label {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form__item input,
+.form__item select {
+  padding: 17px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.email-input {
+  display: flex;
+  width: 100%;
+}
+
+.email-input input {
+  flex: 0 0 60%;
+  border-radius: 5px 0 0 5px;
+}
+
+.email-input__domen {
+  flex: 1 1 auto;
+  padding: 17px 13px;
+  border-radius: 0 5px 5px 0;
+  font-size: 18px;
+  background: #e7e7e7;
+  text-align: center;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  background-color: #005892;
+  border: none;
+  margin-top: 15px;
+  padding: 17px 25px;
+  font-size: 18px;
+  color: #fff;
+}
